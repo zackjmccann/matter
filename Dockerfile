@@ -8,4 +8,7 @@ RUN pip install --upgrade pip
 
 RUN apt-get -y update && apt-get -y install nginx
 
-COPY beans canned
+COPY canned canned
+COPY matter.py ./
+
+RUN ["python", "./matter.py"]

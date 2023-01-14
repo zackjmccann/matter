@@ -1,2 +1,2 @@
-if __name__ == '__main__':
+def run():
     print('surfs up.')
